@@ -1,5 +1,5 @@
 import React from "react";
-import {  Link, useLocation, Routes, Route } from "react-router-dom";
+import {  Link, Routes, Route } from "react-router-dom";
 import "../index.css";
 // import RoomDetails from "./RoomDetails";
 
