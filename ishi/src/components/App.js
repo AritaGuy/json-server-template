@@ -17,7 +17,7 @@ function App() {
    <Route path="/rooms/*" element = {<Rooms />} />
    <Route path="/roomdetails/:roomId" element = {<RoomDetails />} />
    <Route path="/paymentoken" element = {<PaymentToken />} />
-   <Route path="/congratulations" element = {<Confirm />} />
+   <Route path="/congratulations/:roomId" element = {<Confirm />} />
   </Routes>
   
   </div>;
