@@ -12,7 +12,7 @@ function RoomDetails(){
   useEffect(()=> {
    fetch(`${roomDB}/${params.roomId}`)
   .then((r)=>r.json())
-  .then((data)=>setRoom(data))}, [])
+  .then((data)=>setRoom(data))}, [params.roomId])
   
   console.log(room)
   function handleChange(e){
