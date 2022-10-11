@@ -93,3 +93,21 @@ code {
   width: 30%;
   margin-left: 450px;
 }
+
+#alert-message{
+  width: 70%;
+  height: 500px;
+}
+
+#confirm{
+  text-align: center;
+  align-items: center;
+  margin-left: 450px;
+  margin-top: 150px;
+  
+}
+
+#room-image{
+  height: 500px;
+  width: 55%;
+}
