@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../index.css"
-import {useParams} from "react-router-dom"
+import {useParams, Link, Routes, Route} from "react-router-dom"
+
  
 function RoomDetails(){
   const roomDB = "https://ishi-react.herokuapp.com/rooms"
@@ -30,14 +31,20 @@ function RoomDetails(){
   }
  return(
     <div id="selected-room">
-    <img src={room.image} alt="selected room"/>
+    <img id="room-image" src={room.image} alt="selected room"/>
     <p id="desc">{room.description}</p>
     <form onSubmit={handleSubmit}>
     <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Payment Token</label>
     <input type="text" class="form-control" id="InputPassword1" onChange={handleChange}/>
     </div>
-     <button type="submit" class="btn btn-primary">Submit</button>
+     <Link to={`/congratulations/${room.id}`}><button type="submit" class="btn btn-primary" onClick={
+      ()=>{
+        <Routes>
+        <Route path={`/congratulations`} />
+        </Routes>
+      }
+     }>Submit</button></Link>
     </form>    
     </div>
   )
